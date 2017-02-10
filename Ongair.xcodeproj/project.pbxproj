@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63C814211E48742F00EC727E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C814201E48742F00EC727E /* AppDelegate.swift */; };
+		63C814231E48742F00EC727E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C814221E48742F00EC727E /* ViewController.swift */; };
+		63C814261E48742F00EC727E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C814241E48742F00EC727E /* Main.storyboard */; };
+		63C814281E48742F00EC727E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C814271E48742F00EC727E /* Assets.xcassets */; };
+		63C8142B1E48742F00EC727E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C814291E48742F00EC727E /* LaunchScreen.storyboard */; };
+		63C814361E48742F00EC727E /* OngairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C814351E48742F00EC727E /* OngairTests.swift */; };
+		63C814411E48742F00EC727E /* OngairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C814401E48742F00EC727E /* OngairUITests.swift */; };
+		63C8144F1E4879A200EC727E /* LoginRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C8144E1E4879A200EC727E /* LoginRegisterVC.swift */; };
+		63DA97321E48834F00220A7F /* UIColor+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA97311E48834F00220A7F /* UIColor+util.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63C814321E48742F00EC727E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C814151E48742F00EC727E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C8141C1E48742F00EC727E;
+			remoteInfo = Ongair;
+		};
+		63C8143D1E48742F00EC727E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C814151E48742F00EC727E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C8141C1E48742F00EC727E;
+			remoteInfo = Ongair;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63C8141D1E48742F00EC727E /* Ongair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ongair.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C814201E48742F00EC727E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63C814221E48742F00EC727E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63C814251E48742F00EC727E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63C814271E48742F00EC727E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63C8142A1E48742F00EC727E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63C8142C1E48742F00EC727E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C814311E48742F00EC727E /* OngairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OngairTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C814351E48742F00EC727E /* OngairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OngairTests.swift; sourceTree = "<group>"; };
+		63C814371E48742F00EC727E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C8143C1E48742F00EC727E /* OngairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OngairUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C814401E48742F00EC727E /* OngairUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OngairUITests.swift; sourceTree = "<group>"; };
+		63C814421E48742F00EC727E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C8144E1E4879A200EC727E /* LoginRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterVC.swift; sourceTree = "<group>"; };
+		63DA97311E48834F00220A7F /* UIColor+util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+util.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63C8141A1E48742F00EC727E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C8142E1E48742F00EC727E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C814391E48742F00EC727E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63C814141E48742F00EC727E = {
+			isa = PBXGroup;
+			children = (
+				63C8141F1E48742F00EC727E /* Ongair */,
+				63C814341E48742F00EC727E /* OngairTests */,
+				63C8143F1E48742F00EC727E /* OngairUITests */,
+				63C8141E1E48742F00EC727E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63C8141E1E48742F00EC727E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C8141D1E48742F00EC727E /* Ongair.app */,
+				63C814311E48742F00EC727E /* OngairTests.xctest */,
+				63C8143C1E48742F00EC727E /* OngairUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63C8141F1E48742F00EC727E /* Ongair */ = {
+			isa = PBXGroup;
+			children = (
+				63C814201E48742F00EC727E /* AppDelegate.swift */,
+				63C814221E48742F00EC727E /* ViewController.swift */,
+				63C8144E1E4879A200EC727E /* LoginRegisterVC.swift */,
+				63DA97311E48834F00220A7F /* UIColor+util.swift */,
+				63C814241E48742F00EC727E /* Main.storyboard */,
+				63C814271E48742F00EC727E /* Assets.xcassets */,
+				63C814291E48742F00EC727E /* LaunchScreen.storyboard */,
+				63C8142C1E48742F00EC727E /* Info.plist */,
+			);
+			path = Ongair;
+			sourceTree = "<group>";
+		};
+		63C814341E48742F00EC727E /* OngairTests */ = {
+			isa = PBXGroup;
+			children = (
+				63C814351E48742F00EC727E /* OngairTests.swift */,
+				63C814371E48742F00EC727E /* Info.plist */,
+			);
+			path = OngairTests;
+			sourceTree = "<group>";
+		};
+		63C8143F1E48742F00EC727E /* OngairUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63C814401E48742F00EC727E /* OngairUITests.swift */,
+				63C814421E48742F00EC727E /* Info.plist */,
+			);
+			path = OngairUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63C8141C1E48742F00EC727E /* Ongair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C814451E48742F00EC727E /* Build configuration list for PBXNativeTarget "Ongair" */;
+			buildPhases = (
+				63C814191E48742F00EC727E /* Sources */,
+				63C8141A1E48742F00EC727E /* Frameworks */,
+				63C8141B1E48742F00EC727E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ongair;
+			productName = Ongair;
+			productReference = 63C8141D1E48742F00EC727E /* Ongair.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63C814301E48742F00EC727E /* OngairTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C814481E48742F00EC727E /* Build configuration list for PBXNativeTarget "OngairTests" */;
+			buildPhases = (
+				63C8142D1E48742F00EC727E /* Sources */,
+				63C8142E1E48742F00EC727E /* Frameworks */,
+				63C8142F1E48742F00EC727E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63C814331E48742F00EC727E /* PBXTargetDependency */,
+			);
+			name = OngairTests;
+			productName = OngairTests;
+			productReference = 63C814311E48742F00EC727E /* OngairTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63C8143B1E48742F00EC727E /* OngairUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C8144B1E48742F00EC727E /* Build configuration list for PBXNativeTarget "OngairUITests" */;
+			buildPhases = (
+				63C814381E48742F00EC727E /* Sources */,
+				63C814391E48742F00EC727E /* Frameworks */,
+				63C8143A1E48742F00EC727E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63C8143E1E48742F00EC727E /* PBXTargetDependency */,
+			);
+			name = OngairUITests;
+			productName = OngairUITests;
+			productReference = 63C8143C1E48742F00EC727E /* OngairUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63C814151E48742F00EC727E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Neptune;
+				TargetAttributes = {
+					63C8141C1E48742F00EC727E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5V273URY46;
+						ProvisioningStyle = Automatic;
+					};
+					63C814301E48742F00EC727E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 63C8141C1E48742F00EC727E;
+					};
+					63C8143B1E48742F00EC727E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 63C8141C1E48742F00EC727E;
+					};
+				};
+			};
+			buildConfigurationList = 63C814181E48742F00EC727E /* Build configuration list for PBXProject "Ongair" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63C814141E48742F00EC727E;
+			productRefGroup = 63C8141E1E48742F00EC727E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63C8141C1E48742F00EC727E /* Ongair */,
+				63C814301E48742F00EC727E /* OngairTests */,
+				63C8143B1E48742F00EC727E /* OngairUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63C8141B1E48742F00EC727E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C8142B1E48742F00EC727E /* LaunchScreen.storyboard in Resources */,
+				63C814281E48742F00EC727E /* Assets.xcassets in Resources */,
+				63C814261E48742F00EC727E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C8142F1E48742F00EC727E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C8143A1E48742F00EC727E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63C814191E48742F00EC727E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C814231E48742F00EC727E /* ViewController.swift in Sources */,
+				63C814211E48742F00EC727E /* AppDelegate.swift in Sources */,
+				63C8144F1E4879A200EC727E /* LoginRegisterVC.swift in Sources */,
+				63DA97321E48834F00220A7F /* UIColor+util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C8142D1E48742F00EC727E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C814361E48742F00EC727E /* OngairTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C814381E48742F00EC727E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C814411E48742F00EC727E /* OngairUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63C814331E48742F00EC727E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C8141C1E48742F00EC727E /* Ongair */;
+			targetProxy = 63C814321E48742F00EC727E /* PBXContainerItemProxy */;
+		};
+		63C8143E1E48742F00EC727E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C8141C1E48742F00EC727E /* Ongair */;
+			targetProxy = 63C8143D1E48742F00EC727E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63C814241E48742F00EC727E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C814251E48742F00EC727E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63C814291E48742F00EC727E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C8142A1E48742F00EC727E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63C814431E48742F00EC727E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63C814441E48742F00EC727E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63C814461E48742F00EC727E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5V273URY46;
+				INFOPLIST_FILE = Ongair/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.Neptune.tounce.Ongair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		63C814471E48742F00EC727E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5V273URY46;
+				INFOPLIST_FILE = Ongair/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.Neptune.tounce.Ongair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		63C814491E48742F00EC727E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OngairTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.Neptune.tounce.OngairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ongair.app/Ongair";
+			};
+			name = Debug;
+		};
+		63C8144A1E48742F00EC727E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OngairTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.Neptune.tounce.OngairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ongair.app/Ongair";
+			};
+			name = Release;
+		};
+		63C8144C1E48742F00EC727E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = OngairUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.Neptune.tounce.OngairUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Ongair;
+			};
+			name = Debug;
+		};
+		63C8144D1E48742F00EC727E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = OngairUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.Neptune.tounce.OngairUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Ongair;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63C814181E48742F00EC727E /* Build configuration list for PBXProject "Ongair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C814431E48742F00EC727E /* Debug */,
+				63C814441E48742F00EC727E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C814451E48742F00EC727E /* Build configuration list for PBXNativeTarget "Ongair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C814461E48742F00EC727E /* Debug */,
+				63C814471E48742F00EC727E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C814481E48742F00EC727E /* Build configuration list for PBXNativeTarget "OngairTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C814491E48742F00EC727E /* Debug */,
+				63C8144A1E48742F00EC727E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C8144B1E48742F00EC727E /* Build configuration list for PBXNativeTarget "OngairUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C8144C1E48742F00EC727E /* Debug */,
+				63C8144D1E48742F00EC727E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63C814151E48742F00EC727E /* Project object */;
+}
