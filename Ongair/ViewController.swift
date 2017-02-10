@@ -123,6 +123,7 @@ class ViewController: UIViewController {
             rightNavSeperator.rightAnchor.constraint(equalTo: rightButtonNavView.leftAnchor).isActive = true
             rightNavSeperator.topAnchor.constraint(equalTo: navBar.topAnchor).isActive = true
             rightNavSeperator.widthAnchor.constraint(equalToConstant: 1).isActive = true
+
             rightNavSeperator.heightAnchor.constraint(equalTo: navBar.heightAnchor).isActive = true
             
             contactsButtonView.rightAnchor.constraint(equalTo: rightNavSeperator.leftAnchor).isActive = true
@@ -175,6 +176,8 @@ class ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    
 
 }
 

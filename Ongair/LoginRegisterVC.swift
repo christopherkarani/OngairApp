@@ -21,9 +21,23 @@ class LoginRegisterVC : UIViewController {
     }()
     
     var emailTextField : UITextField = {
+        
+        let imageView = UIImageView ()
+        let msgImage = #imageLiteral(resourceName: "msg")
+        imageView.image = msgImage
+        imageView.contentMode = .scaleAspectFill
+        imageView.frame = CGRect(x: 10, y: 10, width: 15, height: 12)
+        
+        
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Email"
+        textField.keyboardType = .emailAddress
+        textField.rightViewMode = .always
+        textField.rightView = imageView
+        
+        textField.addSubview(imageView)
+        
         return textField
     }()
     
@@ -37,10 +51,20 @@ class LoginRegisterVC : UIViewController {
     }()
     
     var passwordTextField : UITextField = {
+        let imageView = UIImageView ()
+        let image = #imageLiteral(resourceName: "password")
+        imageView.image = image
+        imageView.frame = CGRect(x: 10, y: 10, width: 15, height: 15)
+        
         let textField = UITextField()
         textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Password"
+        
+        textField.rightView = imageView
+        textField.rightViewMode = .always
+        textField.addSubview(imageView)
+        
         return textField
     }()
     
@@ -64,6 +88,15 @@ class LoginRegisterVC : UIViewController {
         emailViewConstrainsts()
         assignBackground()
         buttonConstraints()
+        
+        // dismiss Keyboard
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
 
     func assignBackground() {
@@ -102,6 +135,8 @@ class LoginRegisterVC : UIViewController {
         emailTextField.leftAnchor.constraint(equalTo: emailView.leftAnchor, constant: 7).isActive = true
         emailTextField.widthAnchor.constraint(equalTo: emailView.widthAnchor, constant: -12).isActive = true
         emailTextField.heightAnchor.constraint(equalTo: emailView.heightAnchor).isActive = true
+        
+        
         
         passwordView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         passwordView.topAnchor.constraint(equalTo: emailView.bottomAnchor, constant: 15).isActive = true
