@@ -13,9 +13,6 @@ extension UIColor {
         self.init(r: r/255, g: g/255, b: b/255, a : 1)
     }
     
-    
-    
-    
     func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
@@ -37,5 +34,7 @@ extension UIColor {
             alpha: CGFloat(1.0)
         )
     }
+    
+    
 
 }

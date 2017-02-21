@@ -133,12 +133,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId) ?? UITableViewCell(style: .subtitle, reuseIdentifier:cellId)
-        cell.detailTextLabel?.text = "Ongair Is the best"
-        cell.textLabel?.text = "Lily"
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellId)
+        if cell == nil{
+            
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier:cellId)
+            cell?.detailTextLabel?.text = "Ongair Is the best"
+            cell?.textLabel?.text = "Lily"
+
+        }
         
-        
-        return cell
+        return cell!
+    }
+    
+    func configureCell(_ cell: UITableViewCell) {
+        // cell configurations go here
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
