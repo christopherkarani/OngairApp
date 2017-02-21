@@ -8,7 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var cellId = "cellID"
+    var tableView : UITableView = UITableView()
+    
+    let workMates : [String] = ["Lily", "Eunice", "Mboya"]
     
     var navigationBarView : UIView = {
         let view = UIView()
@@ -97,9 +102,59 @@ class ViewController: UIViewController {
         navBarIconSet()
         navigationController?.navigationBar.barTintColor = UIColor(red: 115/255, green: 51/255, blue: 137/255, alpha: 1)
         view.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        
  
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        
+        
+        let screenSize = UIScreen.main.bounds
+        
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        
+        tableView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        
+        
+        self.view.addSubview(tableView)
+        
+
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId) ?? UITableViewCell(style: .subtitle, reuseIdentifier:cellId)
+        cell.detailTextLabel?.text = "Ongair Is the best"
+        cell.textLabel?.text = "Lily"
+        
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 15
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.delete
+    }
+    
+    
+
+    
+
+    
+
     func navBarIconSet() {
         if let navBar = navigationController?.navigationBar {
             navBar.addSubview(rightButtonNavView)
