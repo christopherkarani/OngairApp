@@ -149,7 +149,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         var cell = tableView.dequeueReusableCell(withIdentifier: cellId)
-       
             
         cell = UITableViewCell(style: .subtitle, reuseIdentifier:cellId)
         cell?.detailTextLabel?.text = "Ongair Is the best"
