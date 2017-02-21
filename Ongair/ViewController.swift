@@ -12,8 +12,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var cellId = "cellID"
     var tableView : UITableView = UITableView()
-    
+    var purpleFontColor : UIColor?
     let workMates : [String] = ["Lily", "Eunice", "Mboya"]
+    var latoRegularFont =  UIFont(name: "Lato-Regular", size: 16)
     
     var navigationBarView : UIView = {
         let view = UIView()
@@ -88,6 +89,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        return imageView
 //    }()
     
+    let timeLabel: UILabel = {
+        let label = UILabel()
+        
+        label.text = "HH:MM:SS"
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.textColor = UIColor.lightGray
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     var inboxButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -102,6 +113,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         navBarIconSet()
         navigationController?.navigationBar.barTintColor = UIColor(red: 115/255, green: 51/255, blue: 137/255, alpha: 1)
         view.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        
+        purpleFontColor = hexStringToUIColor(hex: "#733389")
         
  
     }
@@ -133,15 +146,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         var cell = tableView.dequeueReusableCell(withIdentifier: cellId)
-        if cell == nil{
+       
             
-            cell = UITableViewCell(style: .subtitle, reuseIdentifier:cellId)
-            cell?.detailTextLabel?.text = "Ongair Is the best"
-            cell?.textLabel?.text = "Lily"
+        cell = UITableViewCell(style: .subtitle, reuseIdentifier:cellId)
+        cell?.detailTextLabel?.text = "Ongair Is the best"
+        cell?.textLabel?.text = "Lily"
+        cell?.textLabel?.textColor = purpleFontColor
+        cell?.textLabel?.font = UIFont(name: "Lato-Regular", size: 144)
+        cell?.detailTextLabel?.font = UIFont(name: "Lato-Thin", size: 10)
 
+        cell?.addSubview(timeLabel)
+        guard let labelText = cell?.textLabel else {
+            return cell!
+            
         }
         
+        timeLabel.rightAnchor.constraint(equalTo: (cell?.rightAnchor)!).isActive = true
+        timeLabel.topAnchor.constraint(equalTo: (cell?.topAnchor)!, constant: 18).isActive = true
+        timeLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        timeLabel.heightAnchor.constraint(equalTo: labelText.heightAnchor).isActive = true
         return cell!
     }
     
@@ -238,6 +264,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    func hexStringToUIColor (hex: String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.characters.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
     }
     
     
